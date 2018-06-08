@@ -1,6 +1,7 @@
 node{
     stage('Checkout'){
         checkout scm
+        sh 'echo ${PROJECT}'
         sh 'echo env.GIT_BRANCH'
         sh 'echo ${GIT_BRANCH}'
         sh 'echo env.BRANCH_NAME'
