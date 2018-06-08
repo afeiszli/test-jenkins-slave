@@ -1,5 +1,5 @@
-node('node-chrome'){
+node{
     stage('test'){
-        sh "echo 'whazzap?'"
+        sh 'printenv'
     }
 }
